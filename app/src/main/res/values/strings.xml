@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textos em INGLÊS (idioma principal). A tradução fica em values-pt/strings.xml -->
+<resources>
+    <string name="app_name">PromptPlace</string>
+
+    <!-- Geral -->
+    <string name="voltar">Back</string>
+    <string name="nav_inicio">Home</string>
+    <string name="nav_biblioteca">Library</string>
+    <string name="nav_perfil">Profile</string>
+    <string name="novo">New</string>
+    <string name="fechar">Close</string>
+
+    <!-- Login -->
+    <string name="login_titulo">Log in or sign up</string>
+    <string name="login_subtitulo">Prompts tested by people you trust.\nFind, copy and use them in seconds.</string>
+    <string name="hint_nome">Your name</string>
+    <string name="hint_email">Your email</string>
+    <string name="continuar">Continue</string>
+    <string name="aviso_demo">Demo version. No password and no real charges.</string>
+    <string name="erro_login">Enter your name and a valid email.</string>
+
+    <!-- Início -->
+    <string name="ola">Hi, %1$s</string>
+    <string name="sua_biblioteca">Your library</string>
+    <string name="prompts">prompts</string>
+    <string name="abrir_biblioteca">Open library</string>
+    <string name="criadores">Creators</string>
+    <string name="filtro_todos">All</string>
+    <string name="filtro_imagem">Image</string>
+    <string name="filtro_texto">Text</string>
+    <string name="filtro_codigo">Code</string>
+    <string name="assinatura_um">%d subscription</string>
+    <string name="assinatura_varios">%d subscriptions</string>
+    <string name="teste_livre_um">%d blind test available</string>
+    <string name="teste_livre_varios">%d blind tests available</string>
+    <string name="por_mes">per month</string>
+    <string name="assinante">Subscriber</string>
+
+    <!-- Criador -->
+    <string name="criador">Creator</string>
+    <string name="prompts_titulo">Prompts</string>
+    <string name="nota_media">Rating</string>
+    <string name="avaliacoes">Reviews</string>
+    <string name="cofre_de">%1$s\'s vault</string>
+    <string name="cofre_texto">Get every prompt tested by %1$s. Cancel anytime.</string>
+    <string name="assinar_por">Subscribe for %1$s/month</string>
+    <string name="voce_assinante">You\'re subscribed</string>
+    <string name="assinante_texto">All of %1$s\'s prompts are unlocked in your library.</string>
+    <string name="teste_cego">Blind test: 1 free surprise prompt</string>
+    <string name="teste_cego_usado">Blind test already used</string>
+    <string name="teste_cego_ja_usou">You already used the blind test with this creator.</string>
+    <string name="cofre_de_prompts">Prompt vault</string>
+    <string name="liberado">Unlocked  ·  tap to copy</string>
+    <string name="bloqueado">Locked</string>
+    <string name="aviso_bloqueado">Subscribe or take the blind test to unlock it.</string>
+    <string name="surpresa">Surprise!</string>
+    <string name="surpresa_texto">The draw unlocked \"%1$s\". It\'s already in your library.</string>
+    <string name="ver_prompt">View prompt</string>
+
+    <!-- Pagamento -->
+    <string name="pagamento">Payment</string>
+    <string name="assinatura_mensal">Monthly subscription</string>
+    <string name="total_mes">Total per month</string>
+    <string name="forma_pagamento">Payment method</string>
+    <string name="opcao_pix">Pix  ·  instant approval</string>
+    <string name="opcao_cartao">Credit card  ·  recurring</string>
+    <string name="opcao_boleto">Boleto (bank slip)</string>
+    <string name="hint_cartao">Last 4 digits of the card</string>
+    <string name="para_onde">Where the money goes</string>
+    <string name="criador_recebe">Creator receives 70%</string>
+    <string name="plataforma_fica">Platform keeps 30%</string>
+    <string name="confirmar_assinatura">Confirm subscription</string>
+    <string name="erro_cartao">Enter the last 4 digits of the card.</string>
+    <string name="erro_forma">Choose a payment method.</string>
+    <string name="assinatura_ativa">Subscription active</string>
+    <string name="cofre_liberado">%1$s\'s vault is now unlocked.</string>
+    <string name="ver_cofre">View vault</string>
+
+    <!-- Biblioteca -->
+    <string name="biblioteca">Library</string>
+    <string name="biblioteca_vazia">Your unlocked prompts show up here.</string>
+    <string name="prontos_um">%d prompt ready to copy</string>
+    <string name="prontos_varios">%d prompts ready to copy</string>
+    <string name="nada_aqui">Nothing here yet</string>
+    <string name="nada_texto">Take a blind test or subscribe to a creator to unlock prompts.</string>
+
+    <!-- Prompt -->
+    <string name="prompt">Prompt</string>
+    <string name="prompt_rotulo">PROMPT</string>
+    <string name="copiar_prompt">Copy prompt</string>
+    <string name="copiado">Prompt copied! Paste it into your favorite AI.</string>
+    <string name="prompt_bloqueado">This prompt is locked.</string>
+    <string name="avalie">Rate this prompt</string>
+    <string name="hint_comentario">Comment (optional)</string>
+    <string name="publicar_avaliacao">Post review</string>
+    <string name="avaliacao_publicada">Review posted!</string>
+    <string name="media_de_5">Reviews  ·  %1$s out of 5</string>
+    <string name="nota_um">%d review</string>
+    <string name="nota_varios">%d reviews</string>
+    <string name="sem_avaliacoes">No reviews yet</string>
+    <string name="seja_primeiro">Be the first to review it.</string>
+    <string name="sem_comentario">No comment</string>
+
+    <!-- Perfil -->
+    <string name="perfil">Profile</string>
+    <string name="minhas_assinaturas">My subscriptions</string>
+    <string name="nenhuma_assinatura">No subscriptions yet</string>
+    <string name="escolha_criador">Pick a creator on Home.</string>
+    <string name="pago_via">Paid via %1$s</string>
+    <string name="painel_financeiro">Financial dashboard</string>
+    <string name="receita_plataforma">Platform revenue (30%)</string>
+    <string name="criadores_recebem">Creators receive the other 70%.</string>
+    <string name="saldo_criador">Creator balance (70%)</string>
+    <string name="idioma">Language</string>
+    <string name="idioma_ingles">English</string>
+    <string name="idioma_ingles_sub">Primary language</string>
+    <string name="idioma_portugues">Português</string>
+    <string name="idioma_portugues_sub">Portuguese (Brazil)</string>
+    <string name="ativo">Active</string>
+    <string name="sair">Log out</string>
+</resources>

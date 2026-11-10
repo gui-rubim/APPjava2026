@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tema escuro com UMA cor principal: azul royal (estilo Revolut) -->
+<resources>
+    <color name="azul">#2445FB</color>
+    <color name="azul_claro">#6F8BFF</color>
+    <color name="azul_escuro">#0912C4</color>
+    <color name="azul_fundo">#0F1645</color>
+
+    <color name="fundo">#05060D</color>
+    <color name="superficie">#0F111B</color>
+    <color name="superficie_2">#171A28</color>
+    <color name="linha">#22263A</color>
+
+    <color name="texto">#F5F5F7</color>
+    <color name="texto_2">#9599B3</color>
+    <color name="texto_3">#5D6180</color>
+    <color name="branco">#FFFFFF</color>
+</resources>

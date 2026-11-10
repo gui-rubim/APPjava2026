@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/barra_topo" />
+
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingBottom="32dp">
+
+            <!-- Foto com anel azul -->
+            <FrameLayout
+                android:layout_width="132dp" android:layout_height="132dp"
+                android:layout_gravity="center_horizontal" android:layout_marginTop="8dp"
+                android:background="@drawable/anel" android:padding="7dp">
+
+                <ImageView android:id="@+id/img_foto"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@drawable/circulo" android:scaleType="centerCrop"
+                    android:importantForAccessibility="no" />
+            </FrameLayout>
+
+            <TextView android:id="@+id/txt_nome" style="@style/TituloGrande"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" android:layout_marginTop="16dp"
+                android:textSize="26sp" />
+
+            <TextView android:id="@+id/txt_resumo" style="@style/Pilula"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" android:layout_marginTop="8dp" />
+
+            <TextView android:id="@+id/txt_bio" style="@style/Corpo"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:gravity="center"
+                android:paddingStart="12dp" android:paddingEnd="12dp" />
+
+            <!-- Números do criador -->
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="22dp" android:orientation="horizontal">
+
+                <LinearLayout style="@style/Cartao"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp" android:layout_weight="1"
+                    android:orientation="vertical" android:padding="14dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/prompts_titulo" android:textColor="@color/texto_2" android:textSize="12sp" />
+                    <TextView android:id="@+id/txt_qtd"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/texto" android:textSize="22sp" android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Cartao"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:layout_weight="1"
+                    android:orientation="vertical" android:padding="14dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/nota_media" android:textColor="@color/texto_2" android:textSize="12sp" />
+                    <TextView android:id="@+id/txt_media"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:drawableEnd="@drawable/ic_estrela_pequena" android:drawablePadding="4dp"
+                        android:drawableTint="@color/azul_claro" android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/texto" android:textSize="22sp" android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/Cartao"
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp" android:layout_weight="1"
+                    android:orientation="vertical" android:padding="14dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/avaliacoes" android:textColor="@color/texto_2" android:textSize="12sp" />
+                    <TextView android:id="@+id/txt_avaliacoes"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/texto" android:textSize="22sp" android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Cartão de assinatura (gradiente) -->
+            <LinearLayout android:id="@+id/cartao_assinatura"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cartao_destaque" android:elevation="6dp"
+                android:gravity="center_horizontal" android:orientation="vertical" android:padding="22dp">
+
+                <TextView android:id="@+id/txt_assinatura_titulo"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_cadeado_aberto" android:drawablePadding="8dp"
+                    android:drawableTint="@color/branco" android:fontFamily="sans-serif-medium"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/branco" android:textSize="19sp" android:textStyle="bold" />
+
+                <TextView android:id="@+id/txt_assinatura_texto"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:gravity="center"
+                    android:textColor="#D9FFFFFF" android:textSize="14sp" />
+
+                <TextView android:id="@+id/btn_assinar"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/botao_branco"
+                    android:fontFamily="sans-serif-medium" android:gravity="center"
+                    android:textColor="@color/azul_escuro" android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button android:id="@+id/btn_teste_cego" style="@style/BotaoSecundario"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:drawableStart="@drawable/ic_brilho"
+                android:paddingStart="20dp" android:paddingEnd="20dp"
+                android:text="@string/teste_cego" />
+
+            <TextView style="@style/Secao"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/cofre_de_prompts" />
+
+            <LinearLayout android:id="@+id/lista" style="@style/Cartao"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:divider="@drawable/divisor" android:showDividers="middle"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

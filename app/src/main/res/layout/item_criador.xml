@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cartão de criador no feed: foto de capa + informações -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/cartao"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent" android:layout_height="180dp">
+
+        <ImageView android:id="@+id/criador_capa"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:scaleType="centerCrop" android:importantForAccessibility="no" />
+
+        <View
+            android:layout_width="match_parent" android:layout_height="90dp"
+            android:layout_gravity="bottom" android:background="@drawable/sombra_capa" />
+
+        <TextView android:id="@+id/criador_selo"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:background="@drawable/pilula_escura"
+            android:drawableStart="@drawable/ic_check" android:drawablePadding="6dp"
+            android:drawableTint="@color/azul_claro"
+            android:fontFamily="sans-serif-medium" android:gravity="center_vertical"
+            android:paddingStart="10dp" android:paddingEnd="12dp"
+            android:paddingTop="6dp" android:paddingBottom="6dp"
+            android:text="@string/assinante" android:textColor="@color/texto" android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView android:id="@+id/criador_categoria" style="@style/Pilula"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start" android:layout_margin="14dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical" android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView android:id="@+id/criador_foto"
+            android:layout_width="44dp" android:layout_height="44dp"
+            android:background="@drawable/circulo" android:scaleType="centerCrop"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="12dp" android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/criador_nome"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium" android:textStyle="bold"
+                android:textColor="@color/texto" android:textSize="17sp" />
+
+            <TextView android:id="@+id/criador_info"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:drawableStart="@drawable/ic_estrela_pequena" android:drawablePadding="4dp"
+                android:drawableTint="@color/azul_claro" android:gravity="center_vertical"
+                android:textColor="@color/texto_2" android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:gravity="end" android:orientation="vertical">
+
+            <TextView android:id="@+id/criador_preco"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium" android:textStyle="bold"
+                android:textColor="@color/texto" android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/por_mes" android:textColor="@color/texto_3" android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

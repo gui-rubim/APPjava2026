@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Brilho azul suave atrás do logo -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <gradient android:type="radial" android:gradientRadius="50%p"
+        android:startColor="#802445FB" android:centerColor="#262445FB" android:endColor="#002445FB" />
+</shape>

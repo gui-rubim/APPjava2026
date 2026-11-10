@@ -1,0 +1,14 @@
+# Build e configurações locais
+.gradle/
+build/
+app/build/
+local.properties
+.idea/
+*.iml
+*.apk
+
+# Fora do repositório: só o app vai para o GitHub
+index.html
+versao-console/
+Criadores/
+abrir-no-pc.sh

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Barra de navegação flutuante (Início, Biblioteca, Perfil) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/barra_nav"
+    android:layout_width="match_parent" android:layout_height="68dp"
+    android:layout_gravity="bottom"
+    android:layout_marginStart="24dp" android:layout_marginEnd="24dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/barra_nav_fundo"
+    android:elevation="12dp"
+    android:orientation="horizontal" android:padding="6dp">
+
+    <LinearLayout android:id="@+id/nav_inicio"
+        android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+        android:gravity="center" android:orientation="vertical">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp"
+            android:src="@drawable/ic_inicio" android:importantForAccessibility="no" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:text="@string/nav_inicio" android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/nav_biblioteca"
+        android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+        android:gravity="center" android:orientation="vertical">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp"
+            android:src="@drawable/ic_biblioteca" android:importantForAccessibility="no" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:text="@string/nav_biblioteca" android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/nav_perfil"
+        android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+        android:gravity="center" android:orientation="vertical">
+        <ImageView android:layout_width="22dp" android:layout_height="22dp"
+            android:src="@drawable/ic_pessoa" android:importantForAccessibility="no" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:text="@string/perfil" android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

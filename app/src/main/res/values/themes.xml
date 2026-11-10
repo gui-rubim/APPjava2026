@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Tema" parent="android:Theme.Material.NoActionBar">
+        <item name="android:colorPrimary">@color/azul</item>
+        <item name="android:colorPrimaryDark">@color/fundo</item>
+        <item name="android:colorAccent">@color/azul</item>
+        <item name="android:colorBackground">@color/fundo</item>
+        <item name="android:windowBackground">@color/fundo</item>
+        <item name="android:statusBarColor">@color/fundo</item>
+        <item name="android:navigationBarColor">@color/fundo</item>
+        <item name="android:textColorPrimary">@color/texto</item>
+        <item name="android:textColorSecondary">@color/texto_2</item>
+        <item name="android:alertDialogTheme">@style/Dialogo</item>
+    </style>
+
+    <style name="Dialogo" parent="android:Theme.Material.Dialog.Alert">
+        <item name="android:colorAccent">@color/azul_claro</item>
+        <item name="android:windowBackground">@drawable/dialogo_fundo</item>
+        <item name="android:textColorPrimary">@color/texto</item>
+        <item name="android:textColorSecondary">@color/texto_2</item>
+    </style>
+
+    <!-- Textos -->
+    <style name="TituloGrande">
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/texto</item>
+    </style>
+
+    <style name="Titulo">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texto</item>
+    </style>
+
+    <style name="Corpo">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/texto_2</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="Secao">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/texto_2</item>
+        <item name="android:layout_marginTop">28dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+    </style>
+
+    <!-- Componentes -->
+    <style name="Campo">
+        <item name="android:background">@drawable/campo</item>
+        <item name="android:paddingStart">18dp</item>
+        <item name="android:paddingEnd">18dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textColorHint">@color/texto_3</item>
+    </style>
+
+    <style name="BotaoPrimario">
+        <item name="android:background">@drawable/botao_primario</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawableTint">@color/branco</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="BotaoSecundario" parent="BotaoPrimario">
+        <item name="android:background">@drawable/botao_secundario</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:drawableTint">@color/azul_claro</item>
+    </style>
+
+    <style name="Cartao">
+        <item name="android:background">@drawable/cartao</item>
+    </style>
+
+    <style name="Pilula">
+        <item name="android:background">@drawable/pilula</item>
+        <item name="android:textColor">@color/azul_claro</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="Opcao">
+        <item name="android:background">@drawable/opcao</item>
+        <item name="android:buttonTint">@color/azul</item>
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">64dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="Segmento">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/texto_2</item>
+    </style>
+</resources>

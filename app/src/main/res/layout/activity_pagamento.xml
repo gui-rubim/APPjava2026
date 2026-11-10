@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/barra_topo" />
+
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingBottom="24dp">
+
+            <!-- Resumo -->
+            <LinearLayout style="@style/Cartao"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+
+                <ImageView android:id="@+id/img_foto"
+                    android:layout_width="56dp" android:layout_height="56dp"
+                    android:background="@drawable/circulo" android:scaleType="centerCrop"
+                    android:importantForAccessibility="no" />
+
+                <LinearLayout
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp" android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/assinatura_mensal" android:textColor="@color/texto_2" android:textSize="13sp" />
+                    <TextView android:id="@+id/txt_nome"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium" android:textStyle="bold"
+                        android:textColor="@color/texto" android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Valor em destaque -->
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="28dp" android:layout_marginStart="4dp"
+                android:text="@string/total_mes" android:textColor="@color/texto_2" android:textSize="13sp" />
+            <TextView android:id="@+id/txt_valor"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="sans-serif-medium" android:letterSpacing="-0.03"
+                android:textColor="@color/texto" android:textSize="44sp" android:textStyle="bold" />
+
+            <TextView style="@style/Secao"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/forma_pagamento" />
+
+            <RadioGroup android:id="@+id/grupo_formas"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <RadioButton android:id="@+id/rb_pix" style="@style/Opcao"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/opcao_pix" />
+                <RadioButton android:id="@+id/rb_cartao" style="@style/Opcao"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/opcao_cartao" />
+                <RadioButton android:id="@+id/rb_boleto" style="@style/Opcao"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/opcao_boleto" />
+            </RadioGroup>
+
+            <EditText android:id="@+id/edt_cartao" style="@style/Campo"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_cartao"
+                android:inputType="number" android:maxLength="4"
+                android:visibility="gone" />
+
+            <TextView style="@style/Secao"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/para_onde" />
+
+            <LinearLayout android:id="@+id/lista_divisao" style="@style/Cartao"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:divider="@drawable/divisor" android:showDividers="middle"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button android:id="@+id/btn_pagar" style="@style/BotaoPrimario"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="16dp" android:text="@string/confirmar_assinatura" />
+</LinearLayout>

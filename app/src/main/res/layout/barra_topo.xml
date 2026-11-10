@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Barra superior das telas internas: botão voltar + título -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="64dp"
+    android:paddingStart="12dp" android:paddingEnd="12dp">
+
+    <ImageButton android:id="@+id/btn_voltar"
+        android:layout_width="44dp" android:layout_height="44dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/circulo"
+        android:contentDescription="@string/voltar"
+        android:src="@drawable/ic_voltar"
+        android:tint="@color/texto" />
+
+    <TextView android:id="@+id/txt_topo_titulo"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="56dp" android:layout_marginEnd="56dp"
+        android:ellipsize="end" android:gravity="center" android:maxLines="1"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/texto" android:textSize="17sp" />
+</FrameLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Textos em PORTUGUÊS (idioma secundário) -->
+<resources>
+    <string name="app_name">PromptPlace</string>
+
+    <!-- Geral -->
+    <string name="voltar">Voltar</string>
+    <string name="nav_inicio">Início</string>
+    <string name="nav_biblioteca">Biblioteca</string>
+    <string name="nav_perfil">Perfil</string>
+    <string name="novo">Novo</string>
+    <string name="fechar">Fechar</string>
+
+    <!-- Login -->
+    <string name="login_titulo">Entre ou crie sua conta</string>
+    <string name="login_subtitulo">Os prompts testados por quem você confia.\nEncontre, copie e use em segundos.</string>
+    <string name="hint_nome">Seu nome</string>
+    <string name="hint_email">Seu e-mail</string>
+    <string name="continuar">Continuar</string>
+    <string name="aviso_demo">Versão demonstrativa. Não pede senha e não faz cobranças reais.</string>
+    <string name="erro_login">Preencha seu nome e um e-mail válido.</string>
+
+    <!-- Início -->
+    <string name="ola">Olá, %1$s</string>
+    <string name="sua_biblioteca">Sua biblioteca</string>
+    <string name="prompts">prompts</string>
+    <string name="abrir_biblioteca">Abrir biblioteca</string>
+    <string name="criadores">Criadores</string>
+    <string name="filtro_todos">Todos</string>
+    <string name="filtro_imagem">Imagem</string>
+    <string name="filtro_texto">Texto</string>
+    <string name="filtro_codigo">Código</string>
+    <string name="assinatura_um">%d assinatura</string>
+    <string name="assinatura_varios">%d assinaturas</string>
+    <string name="teste_livre_um">%d teste cego disponível</string>
+    <string name="teste_livre_varios">%d testes cegos disponíveis</string>
+    <string name="por_mes">por mês</string>
+    <string name="assinante">Assinante</string>
+
+    <!-- Criador -->
+    <string name="criador">Criador</string>
+    <string name="prompts_titulo">Prompts</string>
+    <string name="nota_media">Nota média</string>
+    <string name="avaliacoes">Avaliações</string>
+    <string name="cofre_de">Cofre de %1$s</string>
+    <string name="cofre_texto">Acesso a todos os prompts testados por %1$s. Cancele quando quiser.</string>
+    <string name="assinar_por">Assinar por %1$s/mês</string>
+    <string name="voce_assinante">Você é assinante</string>
+    <string name="assinante_texto">Todos os prompts de %1$s estão liberados na sua biblioteca.</string>
+    <string name="teste_cego">Teste cego: 1 prompt grátis surpresa</string>
+    <string name="teste_cego_usado">Teste cego já usado</string>
+    <string name="teste_cego_ja_usou">Você já usou o teste cego com este criador.</string>
+    <string name="cofre_de_prompts">Cofre de prompts</string>
+    <string name="liberado">Liberado  ·  toque para copiar</string>
+    <string name="bloqueado">Bloqueado</string>
+    <string name="aviso_bloqueado">Assine ou faça o teste cego para desbloquear.</string>
+    <string name="surpresa">Surpresa!</string>
+    <string name="surpresa_texto">O sorteio desbloqueou o prompt \"%1$s\". Ele já está na sua biblioteca.</string>
+    <string name="ver_prompt">Ver prompt</string>
+
+    <!-- Pagamento -->
+    <string name="pagamento">Pagamento</string>
+    <string name="assinatura_mensal">Assinatura mensal</string>
+    <string name="total_mes">Total por mês</string>
+    <string name="forma_pagamento">Forma de pagamento</string>
+    <string name="opcao_pix">Pix  ·  aprovação na hora</string>
+    <string name="opcao_cartao">Cartão de crédito  ·  recorrente</string>
+    <string name="opcao_boleto">Boleto</string>
+    <string name="hint_cartao">4 últimos números do cartão</string>
+    <string name="para_onde">Para onde vai o dinheiro</string>
+    <string name="criador_recebe">Criador recebe 70%</string>
+    <string name="plataforma_fica">Plataforma fica com 30%</string>
+    <string name="confirmar_assinatura">Confirmar assinatura</string>
+    <string name="erro_cartao">Digite os 4 últimos números do cartão.</string>
+    <string name="erro_forma">Escolha uma forma de pagamento.</string>
+    <string name="assinatura_ativa">Assinatura ativa</string>
+    <string name="cofre_liberado">O cofre de %1$s foi liberado.</string>
+    <string name="ver_cofre">Ver cofre</string>
+
+    <!-- Biblioteca -->
+    <string name="biblioteca">Biblioteca</string>
+    <string name="biblioteca_vazia">Seus prompts desbloqueados aparecem aqui.</string>
+    <string name="prontos_um">%d prompt pronto para copiar</string>
+    <string name="prontos_varios">%d prompts prontos para copiar</string>
+    <string name="nada_aqui">Nada por aqui ainda</string>
+    <string name="nada_texto">Faça o teste cego ou assine um criador para desbloquear prompts.</string>
+
+    <!-- Prompt -->
+    <string name="prompt">Prompt</string>
+    <string name="prompt_rotulo">PROMPT</string>
+    <string name="copiar_prompt">Copiar prompt</string>
+    <string name="copiado">Prompt copiado! Cole na sua IA favorita.</string>
+    <string name="prompt_bloqueado">Este prompt está bloqueado.</string>
+    <string name="avalie">Avalie este prompt</string>
+    <string name="hint_comentario">Comentário (opcional)</string>
+    <string name="publicar_avaliacao">Publicar avaliação</string>
+    <string name="avaliacao_publicada">Avaliação publicada!</string>
+    <string name="media_de_5">Avaliações  ·  %1$s de 5</string>
+    <string name="nota_um">%d nota</string>
+    <string name="nota_varios">%d notas</string>
+    <string name="sem_avaliacoes">Ainda sem avaliações</string>
+    <string name="seja_primeiro">Seja o primeiro a avaliar.</string>
+    <string name="sem_comentario">Sem comentário</string>
+
+    <!-- Perfil -->
+    <string name="perfil">Perfil</string>
+    <string name="minhas_assinaturas">Minhas assinaturas</string>
+    <string name="nenhuma_assinatura">Nenhuma assinatura ainda</string>
+    <string name="escolha_criador">Escolha um criador no Início.</string>
+    <string name="pago_via">Pago via %1$s</string>
+    <string name="painel_financeiro">Painel financeiro</string>
+    <string name="receita_plataforma">Receita da plataforma (30%)</string>
+    <string name="criadores_recebem">Os criadores recebem os outros 70%.</string>
+    <string name="saldo_criador">Saldo do criador (70%)</string>
+    <string name="idioma">Idioma</string>
+    <string name="idioma_ingles">English</string>
+    <string name="idioma_ingles_sub">Idioma principal</string>
+    <string name="idioma_portugues">Português</string>
+    <string name="idioma_portugues_sub">Português (Brasil)</string>
+    <string name="ativo">Ativo</string>
+    <string name="sair">Sair da conta</string>
+</resources>
