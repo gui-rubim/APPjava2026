@@ -1,114 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Tema" parent="android:Theme.Material.NoActionBar">
+    <style name="Tema" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:colorPrimary">@color/azul</item>
-        <item name="android:colorPrimaryDark">@color/fundo</item>
+        <item name="android:colorPrimaryDark">@color/azul</item>
         <item name="android:colorAccent">@color/azul</item>
-        <item name="android:colorBackground">@color/fundo</item>
-        <item name="android:windowBackground">@color/fundo</item>
-        <item name="android:statusBarColor">@color/fundo</item>
-        <item name="android:navigationBarColor">@color/fundo</item>
-        <item name="android:textColorPrimary">@color/texto</item>
-        <item name="android:textColorSecondary">@color/texto_2</item>
+        <item name="android:colorControlActivated">@color/azul</item>
+        <item name="android:colorBackground">@color/papel</item>
+        <item name="android:windowBackground">@color/papel</item>
+        <item name="android:statusBarColor">@color/papel</item>
+        <item name="android:navigationBarColor">@color/branco</item>
+        <item name="android:textColorPrimary">@color/tinta</item>
+        <item name="android:textColorSecondary">@color/suave</item>
+        <item name="android:fontFamily">@font/bricolage</item>
         <item name="android:alertDialogTheme">@style/Dialogo</item>
     </style>
 
-    <style name="Dialogo" parent="android:Theme.Material.Dialog.Alert">
-        <item name="android:colorAccent">@color/azul_claro</item>
+    <style name="Dialogo" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/azul</item>
         <item name="android:windowBackground">@drawable/dialogo_fundo</item>
-        <item name="android:textColorPrimary">@color/texto</item>
-        <item name="android:textColorSecondary">@color/texto_2</item>
+        <item name="android:fontFamily">@font/bricolage</item>
+        <item name="android:textColorPrimary">@color/tinta</item>
     </style>
 
     <!-- Textos -->
     <style name="TituloGrande">
-        <item name="android:textSize">30sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/bricolage_extrabold</item>
+        <item name="android:textSize">32sp</item>
         <item name="android:letterSpacing">-0.02</item>
-        <item name="android:textColor">@color/texto</item>
+        <item name="android:lineSpacingMultiplier">0.95</item>
+        <item name="android:textColor">@color/tinta</item>
     </style>
 
     <style name="Titulo">
+        <item name="android:fontFamily">@font/bricolage_extrabold</item>
         <item name="android:textSize">20sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/texto</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/tinta</item>
     </style>
 
-    <style name="Corpo">
+    <style name="Subtitulo">
         <item name="android:textSize">15sp</item>
-        <item name="android:textColor">@color/texto_2</item>
-        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:textColor">@color/suave</item>
+        <item name="android:lineSpacingExtra">3dp</item>
     </style>
 
-    <style name="Secao">
+    <style name="Rotulo">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/tinta</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <style name="Pequeno">
         <item name="android:textSize">13sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:textColor">@color/texto_2</item>
-        <item name="android:layout_marginTop">28dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
-        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:textColor">@color/suave</item>
     </style>
 
     <!-- Componentes -->
-    <style name="Campo">
-        <item name="android:background">@drawable/campo</item>
-        <item name="android:paddingStart">18dp</item>
-        <item name="android:paddingEnd">18dp</item>
-        <item name="android:minHeight">56dp</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/texto</item>
-        <item name="android:textColorHint">@color/texto_3</item>
+    <style name="Cartao">
+        <item name="android:background">@drawable/cartao</item>
+        <item name="android:padding">18dp</item>
     </style>
 
-    <style name="BotaoPrimario">
-        <item name="android:background">@drawable/botao_primario</item>
-        <item name="android:textColor">@color/branco</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
+    <style name="Campo">
+        <item name="android:background">@drawable/campo</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/tinta</item>
+        <item name="android:textColorHint">#8A8FB0</item>
+    </style>
+
+    <style name="BotaoBase">
         <item name="android:textAllCaps">false</item>
-        <item name="android:minHeight">56dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
         <item name="android:gravity">center</item>
-        <item name="android:drawableTint">@color/branco</item>
         <item name="android:stateListAnimator">@null</item>
     </style>
 
-    <style name="BotaoSecundario" parent="BotaoPrimario">
+    <style name="BotaoPrimario" parent="BotaoBase">
+        <item name="android:background">@drawable/botao_primario</item>
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:drawableTint">@color/branco</item>
+    </style>
+
+    <style name="BotaoSecundario" parent="BotaoBase">
         <item name="android:background">@drawable/botao_secundario</item>
-        <item name="android:textColor">@color/texto</item>
-        <item name="android:drawableTint">@color/azul_claro</item>
+        <item name="android:textColor">@color/tinta</item>
+        <item name="android:drawableTint">@color/tinta</item>
     </style>
 
-    <style name="Cartao">
-        <item name="android:background">@drawable/cartao</item>
+    <style name="BotaoAmarelo" parent="BotaoBase">
+        <item name="android:background">@drawable/botao_amarelo</item>
+        <item name="android:textColor">@color/tinta</item>
     </style>
 
-    <style name="Pilula">
-        <item name="android:background">@drawable/pilula</item>
-        <item name="android:textColor">@color/azul_claro</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:paddingStart">10dp</item>
-        <item name="android:paddingEnd">10dp</item>
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
+    <style name="BotaoPequeno">
+        <item name="android:minHeight">38dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
     </style>
 
-    <style name="Opcao">
-        <item name="android:background">@drawable/opcao</item>
-        <item name="android:buttonTint">@color/azul</item>
-        <item name="android:textColor">@color/texto</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:minHeight">64dp</item>
-        <item name="android:paddingStart">10dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
-    </style>
-
-    <style name="Segmento">
-        <item name="android:gravity">center</item>
+    <style name="Chip">
+        <item name="android:background">@drawable/chip</item>
+        <item name="android:textColor">@color/tinta</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:textColor">@color/texto_2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">38dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="Caixa">
+        <item name="android:buttonTint">@color/azul</item>
+        <item name="android:textColor">@color/tinta</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:minHeight">40dp</item>
+    </style>
+
+    <style name="ItemNav">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="TextoNav">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textSize">10.5sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Lista">
+        <item name="android:background">@drawable/cartao</item>
+        <item name="android:divider">@drawable/divisor</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="Barra">
+        <item name="android:progressDrawable">@drawable/seekbar_progresso</item>
+        <item name="android:thumb">@drawable/seekbar_bolinha</item>
+        <item name="android:splitTrack">false</item>
+        <item name="android:minHeight">6dp</item>
+        <item name="android:maxHeight">6dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
     </style>
 </resources>

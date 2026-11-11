@@ -25,14 +25,15 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        TelaBase.pintarBarrasDoSistema(this, true);
 
         // Seletor de idioma EN | PT
-        TextView btnIngles = findViewById(R.id.btn_en);
-        TextView btnPortugues = findViewById(R.id.btn_pt);
-        marcar(btnIngles, Idioma.getAtual() == Idioma.INGLES);
-        marcar(btnPortugues, Idioma.getAtual() == Idioma.PORTUGUES);
-        btnIngles.setOnClickListener(v -> trocarIdioma(Idioma.INGLES));
-        btnPortugues.setOnClickListener(v -> trocarIdioma(Idioma.PORTUGUES));
+        TextView ingles = findViewById(R.id.btn_en);
+        TextView portugues = findViewById(R.id.btn_pt);
+        marcar(ingles, Idioma.getAtual() == Idioma.INGLES);
+        marcar(portugues, Idioma.getAtual() == Idioma.PORTUGUES);
+        ingles.setOnClickListener(v -> trocarIdioma(Idioma.INGLES));
+        portugues.setOnClickListener(v -> trocarIdioma(Idioma.PORTUGUES));
 
         EditText campoNome = findViewById(R.id.edt_nome);
         EditText campoEmail = findViewById(R.id.edt_email);
@@ -40,21 +41,19 @@ public class LoginActivity extends Activity {
         findViewById(R.id.btn_entrar).setOnClickListener(v -> {
             String nome = campoNome.getText().toString().trim();
             String email = campoEmail.getText().toString().trim();
-
             if (nome.isEmpty() || !email.contains("@")) {
                 Toast.makeText(this, R.string.erro_login, Toast.LENGTH_SHORT).show();
                 return;
             }
-
             DadosApp.entrar(nome, email);
-            startActivity(new Intent(this, FeedActivity.class));
+            startActivity(new Intent(this, MarketplaceActivity.class));
             finish();
         });
     }
 
     private void marcar(TextView botao, boolean ativo) {
-        botao.setBackgroundResource(ativo ? R.drawable.segmento_ativo : 0);
-        botao.setTextColor(getColor(ativo ? R.color.branco : R.color.texto_2));
+        botao.setBackgroundResource(ativo ? R.drawable.busca_fundo : 0);
+        botao.setTextColor(getColor(ativo ? R.color.azul : R.color.branco));
     }
 
     private void trocarIdioma(Idioma idioma) {

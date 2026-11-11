@@ -1,103 +1,97 @@
 package com.promptplace.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-/** HERANÇA: Criador é um Usuario (extends). */
+/** HERANÇA: Criador é um Usuario (extends). Publica prompts e recebe pelas vendas. */
 public class Criador extends Usuario {
 
-    public static final double PRECO_MINIMO = 10.00;
-
     // ENCAPSULAMENTO: atributos private, acessados por métodos public.
-    private double precoAssinatura;
-    private double saldo;
-    private Texto bio;
-    private String foto;
-    private Categoria categoria;
-    private List<Prompt> cofre = new ArrayList<>(); // ASSOCIAÇÃO com Prompt
+    private String handle;
+    private String foto; // nome da imagem; null = mostra as iniciais
+    private List<Prompt> prompts = new ArrayList<>(); // ASSOCIAÇÃO com Prompt
 
-    public Criador(String nome, String email, Texto bio, String foto,
-                   Categoria categoria, double precoAssinatura) {
+    public Criador(String nome, String email, String handle, String foto) {
         super(nome, email); // chama o construtor de Usuario
-        this.bio = bio;
+        this.handle = handle;
         this.foto = foto;
-        this.categoria = categoria;
-        setPrecoAssinatura(precoAssinatura);
     }
 
-    /** Regra da proposta: preço mínimo de R$ 10,00. */
-    public void setPrecoAssinatura(double preco) {
-        if (preco < PRECO_MINIMO) {
+    /** Publica um prompt novo. As regras de validação ficam aqui dentro. */
+    public Prompt publicarPrompt(String titulo, Categoria categoria, double preco,
+                                 List<String> modelos, String descricao, String conteudo) {
+        if (titulo.trim().isEmpty() || descricao.trim().isEmpty() || conteudo.trim().isEmpty()) {
             throw new IllegalArgumentException(Idioma.t(
-                    "The minimum subscription price is R$ 10.00.",
-                    "O preço mínimo da assinatura é R$ 10,00."));
+                    "Fill in the title, the short description and the full prompt.",
+                    "Preencha o título, a descrição curta e o prompt completo."));
         }
-        this.precoAssinatura = preco;
+        List<String> funcionaEm = modelos.isEmpty()
+                ? new ArrayList<>(Collections.singletonList("ChatGPT")) : modelos;
+        return new Prompt(new Texto(titulo.trim()), new Texto(descricao.trim()),
+                new Texto(conteudo.trim()), categoria, funcionaEm,
+                Math.round(preco * 100) / 100.0, this);
     }
 
-    public void publicarPrompt(Texto titulo, Texto conteudo) {
-        cofre.add(new Prompt(titulo, conteudo, categoria, this));
+    /** Chamado pelo construtor de Prompt: o prompt passa a fazer parte do perfil. */
+    void adicionar(Prompt prompt) {
+        prompts.add(prompt);
     }
 
-    /** Recebe a parte do criador (70%) de cada assinatura. */
-    public void receber(double valor) {
-        saldo += valor;
+    public int getVendas() {
+        int total = 0;
+        for (Prompt p : prompts) {
+            total += p.getVendas();
+        }
+        return total;
+    }
+
+    public int getTotalAvaliacoes() {
+        int total = 0;
+        for (Prompt p : prompts) {
+            total += p.getQuantidadeAvaliacoes();
+        }
+        return total;
+    }
+
+    /** Média das notas, com mais peso para os prompts com mais avaliações. */
+    public double getNotaMedia() {
+        int total = getTotalAvaliacoes();
+        if (total == 0) {
+            return 0;
+        }
+        double soma = 0;
+        for (Prompt p : prompts) {
+            soma += p.getNota() * p.getQuantidadeAvaliacoes();
+        }
+        return soma / total;
+    }
+
+    /** Quanto o criador ganhou: vendas x preço, já descontada a taxa da plataforma. */
+    public double getGanhosEstimados() {
+        double total = 0;
+        for (Prompt p : prompts) {
+            total += p.getVendas() * p.getPreco() * (1 - Compra.TAXA);
+        }
+        return total;
     }
 
     // POLIMORFISMO: implementação própria do método abstrato de Usuario.
     @Override
     public String exibirPerfil() {
-        return categoria.getNomeCompleto() + "  ·  " + cofre.size()
-                + Idioma.t(" prompts in the vault", " prompts no cofre");
+        // "nome" é protected em Usuario: a subclasse acessa direto.
+        return handle + "  ·  " + prompts.size() + Idioma.t(" prompts published", " prompts publicados");
     }
 
-    /** Média das notas de todos os prompts do cofre (0 se ninguém avaliou). */
-    public double getNotaMedia() {
-        double soma = 0;
-        int quantidade = 0;
-        for (Prompt p : cofre) {
-            for (Avaliacao a : p.getAvaliacoes()) {
-                soma += a.getNota();
-                quantidade++;
-            }
-        }
-        return quantidade == 0 ? 0 : soma / quantidade;
+    public String getHandle() {
+        return handle;
     }
 
-    public int getTotalAvaliacoes() {
-        int total = 0;
-        for (Prompt p : cofre) {
-            total += p.getAvaliacoes().size();
-        }
-        return total;
-    }
-
-    public String getPrecoFormatado() {
-        return Formato.texto("R$ %.2f", precoAssinatura);
-    }
-
-    /** Nome da imagem da foto do criador (ex.: "foto_marina"). */
     public String getFoto() {
         return foto;
     }
 
-    public double getPrecoAssinatura() {
-        return precoAssinatura;
-    }
-
-    public double getSaldo() {
-        return saldo;
-    }
-
-    public String getBio() {
-        return bio.get();
-    }
-
-    public Categoria getCategoria() {
-        return categoria;
-    }
-
-    public List<Prompt> getCofre() {
-        return cofre;
+    public List<Prompt> getPrompts() {
+        return prompts;
     }
 }

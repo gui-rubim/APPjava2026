@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView android:id="@+id/rolagem"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:clipToPadding="false" android:paddingBottom="96dp">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp" android:paddingTop="22dp">
+
+            <TextView style="@style/TituloGrande"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/comunidade_titulo" />
+
+            <TextView style="@style/Subtitulo"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:text="@string/comunidade_sub" />
+
+            <!-- Avaliar um prompt comprado -->
+            <LinearLayout style="@style/Cartao"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" android:orientation="vertical">
+
+                <TextView style="@style/Titulo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/avaliar_titulo" android:textSize="18sp" />
+
+                <TextView style="@style/Rotulo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/campo_prompt_avaliar" />
+                <TextView android:id="@+id/btn_escolher_prompt" style="@style/Campo"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_seta" android:drawableTint="@color/suave" android:gravity="center_vertical" />
+
+                <TextView style="@style/Rotulo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/sua_nota" />
+                <RatingBar android:id="@+id/rating"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:numStars="5" android:stepSize="1"
+                    android:progressBackgroundTint="@color/estrela_vazia" android:progressTint="@color/estrela"
+                    android:secondaryProgressTint="@color/estrela_vazia" />
+
+                <TextView style="@style/Rotulo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/comentario" />
+                <EditText android:id="@+id/edt_comentario" style="@style/Campo"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:gravity="top" android:hint="@string/comentario_hint"
+                    android:inputType="textMultiLine|textCapSentences" android:minLines="3" />
+
+                <Button android:id="@+id/btn_publicar_avaliacao" style="@style/BotaoPrimario"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp" android:text="@string/publicar_avaliacao" />
+            </LinearLayout>
+
+            <TextView style="@style/Titulo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="26dp" android:text="@string/ranking_titulo" android:textSize="18sp" />
+            <TextView style="@style/Pequeno" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/ranking_sub" />
+            <LinearLayout android:id="@+id/lista_ranking" style="@style/Lista"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" />
+
+            <TextView style="@style/Titulo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="26dp" android:text="@string/comunidade_faz" android:textSize="18sp" />
+            <LinearLayout android:id="@+id/lista_faz" style="@style/Lista"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" />
+
+            <TextView style="@style/Titulo" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="26dp" android:text="@string/avaliacoes_recentes" android:textSize="18sp" />
+            <LinearLayout android:id="@+id/lista_avaliacoes"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/barra_nav" />
+</FrameLayout>

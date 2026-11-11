@@ -1,12 +1,10 @@
 package com.promptplace.model;
 
 /**
- * ABSTRAÇÃO: Pagamento é abstrata. O sistema sabe que todo pagamento
- * é "processado", mas cada forma (Pix, Cartão, Boleto) faz isso do seu jeito.
+ * ABSTRAÇÃO: Pagamento é abstrata. É a FORMA de pagar (Pix, Cartão ou Boleto),
+ * usada para recarregar a carteira. Cada forma processa do seu jeito.
  */
 public abstract class Pagamento {
-
-    public static final double TAXA_PLATAFORMA = 0.30; // 30% plataforma, 70% criador
 
     protected double valor;
 
@@ -19,15 +17,6 @@ public abstract class Pagamento {
     public abstract String processar();
 
     public abstract String getNome();
-
-    // Métodos concretos: iguais para todas as formas de pagamento.
-    public double getParteCriador() {
-        return valor * (1 - TAXA_PLATAFORMA);
-    }
-
-    public double getPartePlataforma() {
-        return valor * TAXA_PLATAFORMA;
-    }
 
     public double getValor() {
         return valor;

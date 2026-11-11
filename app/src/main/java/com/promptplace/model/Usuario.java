@@ -26,6 +26,11 @@ public abstract class Usuario {
 
     /** "Marina Lopes" vira "ML". */
     public String getIniciais() {
+        return iniciaisDe(nome);
+    }
+
+    /** Iniciais de qualquer nome: "Paulo M." vira "PM". */
+    public static String iniciaisDe(String nome) {
         String[] partes = nome.trim().split("\\s+");
         String iniciais = partes[0].substring(0, 1);
         if (partes.length > 1) {

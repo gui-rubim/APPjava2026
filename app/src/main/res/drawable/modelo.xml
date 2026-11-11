@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Etiqueta das ferramentas (ChatGPT, Claude...) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="1dp" android:color="@color/linha" />
+    <corners android:radius="6dp" />
+</shape>

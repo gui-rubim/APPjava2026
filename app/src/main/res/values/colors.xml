@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Tema escuro com UMA cor principal: azul royal (estilo Revolut) -->
+<!-- Mesmas cores do protótipo (index.html): azul e branco, com detalhes em amarelo -->
 <resources>
-    <color name="azul">#2445FB</color>
-    <color name="azul_claro">#6F8BFF</color>
-    <color name="azul_escuro">#0912C4</color>
-    <color name="azul_fundo">#0F1645</color>
-
-    <color name="fundo">#05060D</color>
-    <color name="superficie">#0F111B</color>
-    <color name="superficie_2">#171A28</color>
-    <color name="linha">#22263A</color>
-
-    <color name="texto">#F5F5F7</color>
-    <color name="texto_2">#9599B3</color>
-    <color name="texto_3">#5D6180</color>
+    <color name="azul">#2433E0</color>
+    <color name="azul_escuro">#1A25B3</color>
+    <color name="azul_fraco">#EBECFC</color>
+    <color name="papel">#F5F6FB</color>
     <color name="branco">#FFFFFF</color>
+    <color name="tinta">#14183B</color>
+    <color name="suave">#5B6188</color>
+    <color name="linha">#DDE0EF</color>
+    <color name="marca">#FFE34D</color>
+    <color name="marca_fraca">#FFF6B8</color>
+    <color name="coral">#E5483F</color>
+    <color name="coral_fraco">#FCEDEC</color>
+    <color name="menta">#0B7A5C</color>
+    <color name="menta_fraca">#E2F1EC</color>
+    <color name="roxo">#6B24C0</color>
+    <color name="roxo_fraco">#F0E9F9</color>
+    <color name="estrela">#F0A500</color>
+    <color name="estrela_vazia">#D5D8EA</color>
+    <color name="coracao_vazio">#B8BCD3</color>
+    <color name="branco_80">#CCFFFFFF</color>
+    <color name="branco_20">#33FFFFFF</color>
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Saldo de demonstração com o botão "+ R$ 100" (igual ao do protótipo) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/carteira"
+    android:layout_width="wrap_content" android:layout_height="40dp"
+    android:background="@drawable/carteira_fundo"
+    android:gravity="center_vertical" android:orientation="horizontal"
+    android:paddingStart="14dp" android:paddingEnd="4dp">
+
+    <TextView android:id="@+id/carteira_valor"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/branco" android:textSize="13sp" />
+
+    <TextView android:id="@+id/carteira_mais"
+        android:layout_width="wrap_content" android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/botao_amarelo" android:gravity="center"
+        android:paddingStart="12dp" android:paddingEnd="12dp"
+        android:text="@string/mais_100" android:textColor="@color/tinta"
+        android:textSize="13sp" android:textStyle="bold" />
+</LinearLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Cartão com gradiente azul (estilo "saldo" de app de banco) -->
+<!-- Cartão do plano mais escolhido: borda azul mais grossa -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient android:angle="270" android:startColor="#4A6BFF" android:centerColor="#1F3BF5" android:endColor="#0812B5" />
-    <corners android:radius="26dp" />
+    <solid android:color="@color/branco" />
+    <stroke android:width="2dp" android:color="@color/azul" />
+    <corners android:radius="16dp" />
 </shape>

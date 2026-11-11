@@ -9,8 +9,8 @@ public class PagamentoBoleto extends Pagamento {
 
     @Override
     public String processar() {
-        return Formato.texto(Idioma.t("Boleto for R$ %.2f issued. (In this demo it counts as paid.)",
-                "Boleto de R$ %.2f emitido. (Na demonstração, já consideramos pago.)"), valor);
+        return Idioma.t("Boleto issued (in this demo it counts as paid): ",
+                "Boleto emitido (na demonstração, já conta como pago): ") + Formato.dinheiro(valor) + ".";
     }
 
     @Override

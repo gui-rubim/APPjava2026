@@ -1,122 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Textos em PORTUGUÊS (idioma secundário) -->
+<!-- Textos em PORTUGUÊS (idioma secundário), iguais aos do protótipo index.html -->
 <resources>
     <string name="app_name">PromptPlace</string>
 
     <!-- Geral -->
     <string name="voltar">Voltar</string>
-    <string name="nav_inicio">Início</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nav_marketplace">Marketplace</string>
     <string name="nav_biblioteca">Biblioteca</string>
-    <string name="nav_perfil">Perfil</string>
+    <string name="nav_criar">Criar</string>
+    <string name="nav_comunidade">Comunidade</string>
+    <string name="nav_mais">Mais</string>
     <string name="novo">Novo</string>
-    <string name="fechar">Fechar</string>
+    <string name="por">por %1$s</string>
+    <string name="por_curto">por</string>
+    <string name="por_categoria">por %1$s, %2$s</string>
+    <string name="venda_uma">%1$s venda</string>
+    <string name="vendas_varias">%1$s vendas</string>
+    <string name="sem_notas">Sem notas</string>
+    <string name="copiado">Prompt copiado.</string>
+
+    <!-- Saldo de demonstração e formas de pagamento -->
+    <string name="saldo_curto">Saldo demo</string>
+    <string name="mais_100">+ R$ 100</string>
+    <string name="recarregar_titulo">Recarregar %1$s com</string>
+    <string name="forma_pix">Pix (na hora)</string>
+    <string name="forma_cartao">Cartão de crédito final 4242</string>
+    <string name="forma_boleto">Boleto</string>
 
     <!-- Login -->
-    <string name="login_titulo">Entre ou crie sua conta</string>
-    <string name="login_subtitulo">Os prompts testados por quem você confia.\nEncontre, copie e use em segundos.</string>
+    <string name="login_etiqueta">Pitch com protótipo interativo</string>
+    <string name="login_titulo">O marketplace onde bons prompts encontram quem precisa deles.</string>
+    <string name="login_subtitulo">Pesquise, visualize, avalie e compre prompts de IA. Ou publique os seus, aceite encomendas e receba por cada venda.</string>
+    <string name="login_cartao">Experimentar o protótipo</string>
     <string name="hint_nome">Seu nome</string>
     <string name="hint_email">Seu e-mail</string>
-    <string name="continuar">Continuar</string>
+    <string name="entrar">Entrar</string>
     <string name="aviso_demo">Versão demonstrativa. Não pede senha e não faz cobranças reais.</string>
     <string name="erro_login">Preencha seu nome e um e-mail válido.</string>
 
-    <!-- Início -->
-    <string name="ola">Olá, %1$s</string>
-    <string name="sua_biblioteca">Sua biblioteca</string>
-    <string name="prompts">prompts</string>
-    <string name="abrir_biblioteca">Abrir biblioteca</string>
-    <string name="criadores">Criadores</string>
-    <string name="filtro_todos">Todos</string>
-    <string name="filtro_imagem">Imagem</string>
-    <string name="filtro_texto">Texto</string>
-    <string name="filtro_codigo">Código</string>
-    <string name="assinatura_um">%d assinatura</string>
-    <string name="assinatura_varios">%d assinaturas</string>
-    <string name="teste_livre_um">%d teste cego disponível</string>
-    <string name="teste_livre_varios">%d testes cegos disponíveis</string>
-    <string name="por_mes">por mês</string>
-    <string name="assinante">Assinante</string>
+    <!-- Marketplace -->
+    <string name="marketplace">Marketplace</string>
+    <string name="marketplace_sub">Pesquise, veja a prévia, compre e avalie. O saldo no topo da tela é de demonstração e pode ser recarregado.</string>
+    <string name="busca_hint">Buscar por título, criador ou modelo</string>
+    <string name="ordenar_por">Ordenar por</string>
+    <string name="todos">Todos</string>
+    <string name="encontrado_um">%1$s prompt encontrado</string>
+    <string name="encontrado_varios">%1$s prompts encontrados</string>
+    <string name="nada_encontrado">Nenhum prompt encontrado. Tente outra palavra ou escolha outra categoria.</string>
+    <string name="na_biblioteca">Na sua biblioteca</string>
+    <string name="favoritar">Favoritar</string>
+    <string name="nos_favoritos">Nos favoritos</string>
+    <string name="remover_favorito">Remover dos favoritos</string>
 
-    <!-- Criador -->
-    <string name="criador">Criador</string>
-    <string name="prompts_titulo">Prompts</string>
-    <string name="nota_media">Nota média</string>
-    <string name="avaliacoes">Avaliações</string>
-    <string name="cofre_de">Cofre de %1$s</string>
-    <string name="cofre_texto">Acesso a todos os prompts testados por %1$s. Cancele quando quiser.</string>
-    <string name="assinar_por">Assinar por %1$s/mês</string>
-    <string name="voce_assinante">Você é assinante</string>
-    <string name="assinante_texto">Todos os prompts de %1$s estão liberados na sua biblioteca.</string>
-    <string name="teste_cego">Teste cego: 1 prompt grátis surpresa</string>
-    <string name="teste_cego_usado">Teste cego já usado</string>
-    <string name="teste_cego_ja_usou">Você já usou o teste cego com este criador.</string>
-    <string name="cofre_de_prompts">Cofre de prompts</string>
-    <string name="liberado">Liberado  ·  toque para copiar</string>
-    <string name="bloqueado">Bloqueado</string>
-    <string name="aviso_bloqueado">Assine ou faça o teste cego para desbloquear.</string>
-    <string name="surpresa">Surpresa!</string>
-    <string name="surpresa_texto">O sorteio desbloqueou o prompt \"%1$s\". Ele já está na sua biblioteca.</string>
-    <string name="ver_prompt">Ver prompt</string>
-
-    <!-- Pagamento -->
-    <string name="pagamento">Pagamento</string>
-    <string name="assinatura_mensal">Assinatura mensal</string>
-    <string name="total_mes">Total por mês</string>
-    <string name="forma_pagamento">Forma de pagamento</string>
-    <string name="opcao_pix">Pix  ·  aprovação na hora</string>
-    <string name="opcao_cartao">Cartão de crédito  ·  recorrente</string>
-    <string name="opcao_boleto">Boleto</string>
-    <string name="hint_cartao">4 últimos números do cartão</string>
-    <string name="para_onde">Para onde vai o dinheiro</string>
-    <string name="criador_recebe">Criador recebe 70%</string>
-    <string name="plataforma_fica">Plataforma fica com 30%</string>
-    <string name="confirmar_assinatura">Confirmar assinatura</string>
-    <string name="erro_cartao">Digite os 4 últimos números do cartão.</string>
-    <string name="erro_forma">Escolha uma forma de pagamento.</string>
-    <string name="assinatura_ativa">Assinatura ativa</string>
-    <string name="cofre_liberado">O cofre de %1$s foi liberado.</string>
-    <string name="ver_cofre">Ver cofre</string>
+    <!-- Detalhe do prompt -->
+    <string name="previa_parcial">Prévia parcial. Compre para liberar o prompt completo e as atualizações futuras.</string>
+    <string name="prompt_e_seu">Este prompt é seu. As partes em amarelo são as que você preenche.</string>
+    <string name="copiar_prompt">Copiar prompt</string>
+    <string name="comprar_por">Comprar por %1$s</string>
+    <string name="adicionar_gratis">Adicionar grátis à biblioteca</string>
+    <string name="avaliar_prompt">Avaliar</string>
+    <string name="avaliacoes_recentes">Avaliações recentes</string>
+    <string name="compra_concluida">Compra concluída. \"%1$s\" está na sua biblioteca.</string>
+    <string name="adicionado_gratis">\"%1$s\" foi adicionado à sua biblioteca.</string>
 
     <!-- Biblioteca -->
-    <string name="biblioteca">Biblioteca</string>
-    <string name="biblioteca_vazia">Seus prompts desbloqueados aparecem aqui.</string>
-    <string name="prontos_um">%d prompt pronto para copiar</string>
-    <string name="prontos_varios">%d prompts prontos para copiar</string>
-    <string name="nada_aqui">Nada por aqui ainda</string>
-    <string name="nada_texto">Faça o teste cego ou assine um criador para desbloquear prompts.</string>
+    <string name="biblioteca_titulo">Biblioteca pessoal</string>
+    <string name="biblioteca_sub">Tudo o que você comprou ou favoritou, pronto para copiar.</string>
+    <string name="aba_comprados">Comprados (%d)</string>
+    <string name="aba_favoritos">Favoritos (%d)</string>
+    <string name="sem_compras">Você ainda não comprou nenhum prompt. Escolha um no marketplace.</string>
+    <string name="sem_favoritos">Nenhum favorito ainda. Toque no coração de um prompt para guardá-lo aqui.</string>
+    <string name="compre_para_liberar">Compre para liberar o prompt completo.</string>
+    <string name="abrir">Abrir</string>
+    <string name="copiar">Copiar</string>
+    <string name="comprar">Comprar</string>
+    <string name="adicionar">Adicionar</string>
 
-    <!-- Prompt -->
-    <string name="prompt">Prompt</string>
-    <string name="prompt_rotulo">PROMPT</string>
-    <string name="copiar_prompt">Copiar prompt</string>
-    <string name="copiado">Prompt copiado! Cole na sua IA favorita.</string>
-    <string name="prompt_bloqueado">Este prompt está bloqueado.</string>
-    <string name="avalie">Avalie este prompt</string>
-    <string name="hint_comentario">Comentário (opcional)</string>
+    <!-- Perfil do criador -->
+    <string name="criador_titulo">Perfil do criador</string>
+    <string name="criador_sub">Uma vitrine pública para publicar prompts, definir o preço e acompanhar as vendas. Publique um prompt de teste e ele aparece no marketplace.</string>
+    <string name="criador_descricao">Perfil público com portfólio, avaliações e botões de apoio. Cada venda cai na carteira do criador, já descontada a taxa da plataforma.</string>
+    <string name="est_publicados">Prompts publicados</string>
+    <string name="est_vendas">Vendas</string>
+    <string name="est_nota">Nota média</string>
+    <string name="est_ganhos">Ganhos estimados</string>
+    <string name="meus_prompts">Meus prompts publicados</string>
+    <string name="publicar_novo">Publicar novo prompt</string>
+    <string name="campo_titulo">Título</string>
+    <string name="campo_titulo_hint">Ex.: Planejador de Conteúdo Semanal</string>
+    <string name="campo_categoria">Categoria</string>
+    <string name="campo_preco">Preço (R$)</string>
+    <string name="voce_recebe">Você recebe %1$s por venda, depois da taxa de 15%% da plataforma.</string>
+    <string name="campo_funciona">Funciona em</string>
+    <string name="campo_descricao">Descrição curta</string>
+    <string name="campo_descricao_hint">Em uma frase, o que este prompt entrega</string>
+    <string name="campo_prompt">Prompt completo</string>
+    <string name="campo_prompt_hint">Escreva o prompt. Use [COLCHETES] para as partes que o comprador vai preencher.</string>
+    <string name="colchetes_dica">As partes entre colchetes aparecem destacadas para o comprador.</string>
+    <string name="publicar">Publicar no marketplace</string>
+    <string name="publicado">Publicado. Seu prompt já aparece no topo do marketplace.</string>
+    <string name="preco_invalido">Informe um preço válido.</string>
+
+    <!-- Comunidade -->
+    <string name="comunidade_titulo">Avaliações e comunidade</string>
+    <string name="comunidade_sub">Só quem comprou pode avaliar. As notas alimentam o ranking de criadores e a ordem do marketplace.</string>
+    <string name="avaliar_titulo">Avaliar um prompt que você comprou</string>
+    <string name="campo_prompt_avaliar">Prompt</string>
+    <string name="sua_nota">Sua nota</string>
+    <string name="comentario">Comentário</string>
+    <string name="comentario_hint">Conte o que funcionou e o que poderia melhorar</string>
     <string name="publicar_avaliacao">Publicar avaliação</string>
-    <string name="avaliacao_publicada">Avaliação publicada!</string>
-    <string name="media_de_5">Avaliações  ·  %1$s de 5</string>
-    <string name="nota_um">%d nota</string>
-    <string name="nota_varios">%d notas</string>
-    <string name="sem_avaliacoes">Ainda sem avaliações</string>
-    <string name="seja_primeiro">Seja o primeiro a avaliar.</string>
-    <string name="sem_comentario">Sem comentário</string>
+    <string name="avaliacao_publicada">Avaliação publicada. Obrigado!</string>
+    <string name="compre_para_avaliar">Compre um prompt para poder avaliar</string>
+    <string name="ranking_titulo">Ranking de criadores</string>
+    <string name="ranking_sub">Por número de vendas</string>
+    <string name="nota_x">Nota %1$s</string>
+    <string name="voce_marcador">(você)</string>
+    <string name="comunidade_faz">O que a comunidade faz</string>
+    <string name="faz_1">Segue criadores e recebe aviso de novos prompts</string>
+    <string name="faz_2">Marca avaliações como úteis</string>
+    <string name="faz_3">Monta listas curadas por tema</string>
+    <string name="faz_4">Participa de desafios mensais de criação</string>
+    <string name="compra_verificada">Compra verificada</string>
+    <string name="util">Útil (%d)</string>
 
-    <!-- Perfil -->
-    <string name="perfil">Perfil</string>
-    <string name="minhas_assinaturas">Minhas assinaturas</string>
-    <string name="nenhuma_assinatura">Nenhuma assinatura ainda</string>
-    <string name="escolha_criador">Escolha um criador no Início.</string>
-    <string name="pago_via">Pago via %1$s</string>
-    <string name="painel_financeiro">Painel financeiro</string>
-    <string name="receita_plataforma">Receita da plataforma (30%)</string>
-    <string name="criadores_recebem">Os criadores recebem os outros 70%.</string>
-    <string name="saldo_criador">Saldo do criador (70%)</string>
+    <!-- Mais -->
+    <string name="mais_titulo">Mais</string>
+    <string name="saldo_demo">Saldo de demonstração</string>
+    <string name="saldo_demo_nota">No produto real, o pagamento seria por Pix ou cartão.</string>
+    <string name="modulos">Módulos</string>
+    <string name="planos_resumo">Planos para compradores e apoio direto aos criadores</string>
+    <string name="comissoes_resumo">Encomende um prompt sob medida, com pagamento em custódia</string>
+    <string name="historico_resumo">Compras, assinaturas e doações em um extrato exportável</string>
+    <string name="negocio_resumo">Taxas, planos recorrentes, simulador e roadmap</string>
     <string name="idioma">Idioma</string>
     <string name="idioma_ingles">English</string>
     <string name="idioma_ingles_sub">Idioma principal</string>
     <string name="idioma_portugues">Português</string>
     <string name="idioma_portugues_sub">Português (Brasil)</string>
     <string name="ativo">Ativo</string>
+    <string name="demonstracao">Demonstração</string>
+    <string name="reiniciar">Reiniciar demonstração</string>
+    <string name="reiniciar_sub">Volta aos dados iniciais</string>
+    <string name="reiniciar_pergunta">As compras, avaliações e encomendas feitas nesta sessão serão apagadas.</string>
+    <string name="reiniciado">Demonstração reiniciada.</string>
     <string name="sair">Sair da conta</string>
+
+    <!-- Assinaturas e doações -->
+    <string name="planos_titulo">Assinaturas e doações</string>
+    <string name="planos_sub">Planos para quem compra geram receita recorrente. Doações e assinaturas de criador sustentam quem publica.</string>
+    <string name="mensal">Mensal</string>
+    <string name="anual">Anual</string>
+    <string name="anual_desconto">No plano anual, 20% de desconto.</string>
+    <string name="mais_escolhido">Mais escolhido</string>
+    <string name="por_mes">por mês</string>
+    <string name="plano_nota_gratis">Para começar a explorar.</string>
+    <string name="plano_nota_mensal">Cobrança mensal, cancele quando quiser.</string>
+    <string name="plano_nota_anual">Cobrado %1$s por ano.</string>
+    <string name="plano_atual">Plano atual</string>
+    <string name="usar_gratuito">Usar o plano gratuito</string>
+    <string name="assinar_plano">Assinar o %1$s</string>
+    <string name="plano_ativado">Plano %1$s ativado.</string>
+    <string name="apoie_titulo">Apoie quem cria</string>
+    <string name="apoie_sub">Envie uma doação avulsa ou assine um criador para receber conteúdo exclusivo todo mês.</string>
+    <string name="campo_criador">Criador</string>
+    <string name="valor_doacao">Valor da doação</string>
+    <string name="outro_valor">Outro valor</string>
+    <string name="doar">Doar</string>
+    <string name="assinar_criador">Assinar criador por %1$s/mês</string>
+    <string name="obrigado_doacao">Obrigado! %1$s enviados a %2$s.</string>
+    <string name="assinou_criador">Você assinou %1$s por %2$s por mês.</string>
+
+    <!-- Comissões -->
+    <string name="comissoes_titulo">Comissões personalizadas</string>
+    <string name="comissoes_sub">Quando nenhum prompt do catálogo serve, o comprador encomenda um sob medida. O valor fica em custódia até a entrega ser aprovada.</string>
+    <string name="passo_1">Escolha o criador</string>
+    <string name="passo_1_sub">Veja o perfil, o portfólio e as avaliações.</string>
+    <string name="passo_2">Descreva o briefing</string>
+    <string name="passo_2_sub">Conte o objetivo, a ferramenta de IA e o resultado esperado.</string>
+    <string name="passo_3">Pague em custódia</string>
+    <string name="passo_3_sub">O valor é reservado e só vai ao criador depois da aprovação.</string>
+    <string name="passo_4">Receba e avalie</string>
+    <string name="passo_4_sub">Aprove a entrega, libere o pagamento e deixe sua avaliação.</string>
+    <string name="nova_encomenda">Nova encomenda</string>
+    <string name="briefing">Briefing</string>
+    <string name="briefing_hint">Ex.: Preciso de um prompt que transforme notas de reunião em atas com decisões e responsáveis.</string>
+    <string name="orcamento_valor">Orçamento: %1$s</string>
+    <string name="prazo">Prazo</string>
+    <string name="prazo_dias">%d dias</string>
+    <string name="enviar_encomenda">Enviar encomenda</string>
+    <string name="encomenda_enviada">Encomenda enviada. O valor ficou em custódia.</string>
+    <string name="minhas_encomendas">Minhas encomendas</string>
+    <string name="sem_encomendas">Nenhuma encomenda ainda. Envie a primeira pelo formulário acima.</string>
+    <string name="encomenda_info">%1$s em custódia, prazo de %2$s</string>
+    <string name="avancar_etapa">Avançar etapa (demo)</string>
+    <string name="aprovar_liberar">Aprovar e liberar</string>
+    <string name="pagamento_liberado">Pagamento liberado ao criador</string>
+    <string name="etapa_atual">Etapa atual: %1$s</string>
+    <string name="criador_entregou">O criador entregou. Aprove para liberar o pagamento.</string>
+    <string name="entrega_aprovada">Entrega aprovada. O pagamento foi liberado ao criador.</string>
+
+    <!-- Histórico -->
+    <string name="historico_titulo">Histórico de compras</string>
+    <string name="historico_sub">Compras, assinaturas, doações e comissões em um só extrato, que pode ser exportado.</string>
+    <string name="total_movimentado">Total movimentado</string>
+    <string name="transacoes">Transações</string>
+    <string name="plano_atual_rotulo">Plano atual</string>
+    <string name="exportar_csv">Exportar extrato em CSV</string>
+    <string name="arquivo_csv">historico-promptplace.csv</string>
+    <string name="extrato_exportado">Extrato exportado.</string>
+    <string name="erro_exportar">Não foi possível salvar o arquivo.</string>
+
+    <!-- Modelo de negócio -->
+    <string name="negocio_titulo">Modelo de negócio</string>
+    <string name="negocio_sub">A plataforma ganha quando o criador ganha. Os valores abaixo são ilustrativos, não são projeções.</string>
+    <string name="receita_1">Venda de prompts</string>
+    <string name="receita_1_sub">Taxa sobre cada compra no marketplace.</string>
+    <string name="receita_2">Comissões personalizadas</string>
+    <string name="receita_2_sub">Cobrada apenas quando a entrega é aprovada.</string>
+    <string name="receita_3">Assinaturas Pro e Equipes</string>
+    <string name="receita_3_sub">Receita recorrente. O plano Pro custa R$ 29 por mês e o Equipes, R$ 99.</string>
+    <string name="receita_4">Doações e assinaturas de criador</string>
+    <string name="receita_4_sub">Taxa reduzida para incentivar o apoio direto.</string>
+    <string name="simulador_titulo">Simulador de receita</string>
+    <string name="vendas_mes">Vendas por mês</string>
+    <string name="ticket_medio">Ticket médio</string>
+    <string name="volume">Volume movimentado</string>
+    <string name="repasse">Repasse aos criadores (85%)</string>
+    <string name="receita">Receita da plataforma (15%)</string>
+    <string name="simulador_nota">Considera apenas a taxa sobre vendas de prompts.</string>
+    <string name="roadmap">Roadmap</string>
+    <string name="fase_1">Fase 1: base</string>
+    <string name="fase_1_itens">Marketplace com busca e prévia\nPerfil do criador e publicação\nPagamentos e avaliações verificadas</string>
+    <string name="fase_2">Fase 2: receita recorrente</string>
+    <string name="fase_2_itens">Comissões com pagamento em custódia\nAssinaturas Pro e Equipes\nDoações e assinatura de criador</string>
+    <string name="fase_3">Fase 3: escala</string>
+    <string name="fase_3_itens">Comunidade, listas e rankings\nColeções curadas pela equipe\nAPI para usar prompts dentro de apps</string>
 </resources>

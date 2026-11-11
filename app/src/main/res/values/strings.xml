@@ -5,118 +5,236 @@
 
     <!-- Geral -->
     <string name="voltar">Back</string>
-    <string name="nav_inicio">Home</string>
+    <string name="cancelar">Cancel</string>
+    <string name="nav_marketplace">Marketplace</string>
     <string name="nav_biblioteca">Library</string>
-    <string name="nav_perfil">Profile</string>
+    <string name="nav_criar">Create</string>
+    <string name="nav_comunidade">Community</string>
+    <string name="nav_mais">More</string>
     <string name="novo">New</string>
-    <string name="fechar">Close</string>
+    <string name="por">by %1$s</string>
+    <string name="por_curto">by</string>
+    <string name="por_categoria">by %1$s, %2$s</string>
+    <string name="venda_uma">%1$s sale</string>
+    <string name="vendas_varias">%1$s sales</string>
+    <string name="sem_notas">No ratings</string>
+    <string name="copiado">Prompt copied.</string>
+
+    <!-- Saldo de demonstração e formas de pagamento -->
+    <string name="saldo_curto">Demo balance</string>
+    <string name="mais_100">+ R$ 100</string>
+    <string name="recarregar_titulo">Top up %1$s with</string>
+    <string name="forma_pix">Pix (instant)</string>
+    <string name="forma_cartao">Credit card ending in 4242</string>
+    <string name="forma_boleto">Boleto (bank slip)</string>
 
     <!-- Login -->
-    <string name="login_titulo">Log in or sign up</string>
-    <string name="login_subtitulo">Prompts tested by people you trust.\nFind, copy and use them in seconds.</string>
+    <string name="login_etiqueta">Pitch with an interactive prototype</string>
+    <string name="login_titulo">The marketplace where great prompts find the people who need them.</string>
+    <string name="login_subtitulo">Search, preview, rate and buy AI prompts. Or publish your own, take custom orders and get paid for every sale.</string>
+    <string name="login_cartao">Try the prototype</string>
     <string name="hint_nome">Your name</string>
     <string name="hint_email">Your email</string>
-    <string name="continuar">Continue</string>
+    <string name="entrar">Enter</string>
     <string name="aviso_demo">Demo version. No password and no real charges.</string>
     <string name="erro_login">Enter your name and a valid email.</string>
 
-    <!-- Início -->
-    <string name="ola">Hi, %1$s</string>
-    <string name="sua_biblioteca">Your library</string>
-    <string name="prompts">prompts</string>
-    <string name="abrir_biblioteca">Open library</string>
-    <string name="criadores">Creators</string>
-    <string name="filtro_todos">All</string>
-    <string name="filtro_imagem">Image</string>
-    <string name="filtro_texto">Text</string>
-    <string name="filtro_codigo">Code</string>
-    <string name="assinatura_um">%d subscription</string>
-    <string name="assinatura_varios">%d subscriptions</string>
-    <string name="teste_livre_um">%d blind test available</string>
-    <string name="teste_livre_varios">%d blind tests available</string>
-    <string name="por_mes">per month</string>
-    <string name="assinante">Subscriber</string>
+    <!-- Marketplace -->
+    <string name="marketplace">Marketplace</string>
+    <string name="marketplace_sub">Search, preview, buy and rate. The balance at the top is for the demo and can be topped up.</string>
+    <string name="busca_hint">Search by title, creator or model</string>
+    <string name="ordenar_por">Sort by</string>
+    <string name="todos">All</string>
+    <string name="encontrado_um">%1$s prompt found</string>
+    <string name="encontrado_varios">%1$s prompts found</string>
+    <string name="nada_encontrado">No prompts found. Try another word or pick another category.</string>
+    <string name="na_biblioteca">In your library</string>
+    <string name="favoritar">Favorite</string>
+    <string name="nos_favoritos">In favorites</string>
+    <string name="remover_favorito">Remove from favorites</string>
 
-    <!-- Criador -->
-    <string name="criador">Creator</string>
-    <string name="prompts_titulo">Prompts</string>
-    <string name="nota_media">Rating</string>
-    <string name="avaliacoes">Reviews</string>
-    <string name="cofre_de">%1$s\'s vault</string>
-    <string name="cofre_texto">Get every prompt tested by %1$s. Cancel anytime.</string>
-    <string name="assinar_por">Subscribe for %1$s/month</string>
-    <string name="voce_assinante">You\'re subscribed</string>
-    <string name="assinante_texto">All of %1$s\'s prompts are unlocked in your library.</string>
-    <string name="teste_cego">Blind test: 1 free surprise prompt</string>
-    <string name="teste_cego_usado">Blind test already used</string>
-    <string name="teste_cego_ja_usou">You already used the blind test with this creator.</string>
-    <string name="cofre_de_prompts">Prompt vault</string>
-    <string name="liberado">Unlocked  ·  tap to copy</string>
-    <string name="bloqueado">Locked</string>
-    <string name="aviso_bloqueado">Subscribe or take the blind test to unlock it.</string>
-    <string name="surpresa">Surprise!</string>
-    <string name="surpresa_texto">The draw unlocked \"%1$s\". It\'s already in your library.</string>
-    <string name="ver_prompt">View prompt</string>
-
-    <!-- Pagamento -->
-    <string name="pagamento">Payment</string>
-    <string name="assinatura_mensal">Monthly subscription</string>
-    <string name="total_mes">Total per month</string>
-    <string name="forma_pagamento">Payment method</string>
-    <string name="opcao_pix">Pix  ·  instant approval</string>
-    <string name="opcao_cartao">Credit card  ·  recurring</string>
-    <string name="opcao_boleto">Boleto (bank slip)</string>
-    <string name="hint_cartao">Last 4 digits of the card</string>
-    <string name="para_onde">Where the money goes</string>
-    <string name="criador_recebe">Creator receives 70%</string>
-    <string name="plataforma_fica">Platform keeps 30%</string>
-    <string name="confirmar_assinatura">Confirm subscription</string>
-    <string name="erro_cartao">Enter the last 4 digits of the card.</string>
-    <string name="erro_forma">Choose a payment method.</string>
-    <string name="assinatura_ativa">Subscription active</string>
-    <string name="cofre_liberado">%1$s\'s vault is now unlocked.</string>
-    <string name="ver_cofre">View vault</string>
+    <!-- Detalhe do prompt -->
+    <string name="previa_parcial">Partial preview. Buy it to unlock the full prompt and future updates.</string>
+    <string name="prompt_e_seu">This prompt is yours. The highlighted parts are the ones you fill in.</string>
+    <string name="copiar_prompt">Copy prompt</string>
+    <string name="comprar_por">Buy for %1$s</string>
+    <string name="adicionar_gratis">Add to library for free</string>
+    <string name="avaliar_prompt">Rate it</string>
+    <string name="avaliacoes_recentes">Recent reviews</string>
+    <string name="compra_concluida">Purchase complete. \"%1$s\" is in your library.</string>
+    <string name="adicionado_gratis">\"%1$s\" was added to your library.</string>
 
     <!-- Biblioteca -->
-    <string name="biblioteca">Library</string>
-    <string name="biblioteca_vazia">Your unlocked prompts show up here.</string>
-    <string name="prontos_um">%d prompt ready to copy</string>
-    <string name="prontos_varios">%d prompts ready to copy</string>
-    <string name="nada_aqui">Nothing here yet</string>
-    <string name="nada_texto">Take a blind test or subscribe to a creator to unlock prompts.</string>
+    <string name="biblioteca_titulo">Personal library</string>
+    <string name="biblioteca_sub">Everything you bought or saved, ready to copy.</string>
+    <string name="aba_comprados">Purchased (%d)</string>
+    <string name="aba_favoritos">Favorites (%d)</string>
+    <string name="sem_compras">You haven\'t bought any prompt yet. Pick one in the marketplace.</string>
+    <string name="sem_favoritos">No favorites yet. Tap the heart on a prompt to save it here.</string>
+    <string name="compre_para_liberar">Buy it to unlock the full prompt.</string>
+    <string name="abrir">Open</string>
+    <string name="copiar">Copy</string>
+    <string name="comprar">Buy</string>
+    <string name="adicionar">Add</string>
 
-    <!-- Prompt -->
-    <string name="prompt">Prompt</string>
-    <string name="prompt_rotulo">PROMPT</string>
-    <string name="copiar_prompt">Copy prompt</string>
-    <string name="copiado">Prompt copied! Paste it into your favorite AI.</string>
-    <string name="prompt_bloqueado">This prompt is locked.</string>
-    <string name="avalie">Rate this prompt</string>
-    <string name="hint_comentario">Comment (optional)</string>
+    <!-- Perfil do criador -->
+    <string name="criador_titulo">Creator profile</string>
+    <string name="criador_sub">A public storefront to publish prompts, set the price and track sales. Publish a test prompt and it shows up in the marketplace.</string>
+    <string name="criador_descricao">Public profile with portfolio, reviews and support buttons. Every sale goes to the creator\'s wallet, minus the platform fee.</string>
+    <string name="est_publicados">Published prompts</string>
+    <string name="est_vendas">Sales</string>
+    <string name="est_nota">Average rating</string>
+    <string name="est_ganhos">Estimated earnings</string>
+    <string name="meus_prompts">My published prompts</string>
+    <string name="publicar_novo">Publish a new prompt</string>
+    <string name="campo_titulo">Title</string>
+    <string name="campo_titulo_hint">E.g.: Weekly Content Planner</string>
+    <string name="campo_categoria">Category</string>
+    <string name="campo_preco">Price (R$)</string>
+    <string name="voce_recebe">You get %1$s per sale, after the platform\'s 15%% fee.</string>
+    <string name="campo_funciona">Works with</string>
+    <string name="campo_descricao">Short description</string>
+    <string name="campo_descricao_hint">In one sentence, what this prompt delivers</string>
+    <string name="campo_prompt">Full prompt</string>
+    <string name="campo_prompt_hint">Write the prompt. Use [BRACKETS] for the parts the buyer will fill in.</string>
+    <string name="colchetes_dica">The parts in brackets are highlighted for the buyer.</string>
+    <string name="publicar">Publish to the marketplace</string>
+    <string name="publicado">Published. Your prompt now shows up at the top of the marketplace.</string>
+    <string name="preco_invalido">Enter a valid price.</string>
+
+    <!-- Comunidade -->
+    <string name="comunidade_titulo">Reviews and community</string>
+    <string name="comunidade_sub">Only buyers can review. Ratings feed the creator ranking and the marketplace order.</string>
+    <string name="avaliar_titulo">Review a prompt you bought</string>
+    <string name="campo_prompt_avaliar">Prompt</string>
+    <string name="sua_nota">Your rating</string>
+    <string name="comentario">Comment</string>
+    <string name="comentario_hint">Tell what worked and what could be better</string>
     <string name="publicar_avaliacao">Post review</string>
-    <string name="avaliacao_publicada">Review posted!</string>
-    <string name="media_de_5">Reviews  ·  %1$s out of 5</string>
-    <string name="nota_um">%d review</string>
-    <string name="nota_varios">%d reviews</string>
-    <string name="sem_avaliacoes">No reviews yet</string>
-    <string name="seja_primeiro">Be the first to review it.</string>
-    <string name="sem_comentario">No comment</string>
+    <string name="avaliacao_publicada">Review posted. Thank you!</string>
+    <string name="compre_para_avaliar">Buy a prompt to be able to review it</string>
+    <string name="ranking_titulo">Creator ranking</string>
+    <string name="ranking_sub">By number of sales</string>
+    <string name="nota_x">Rating %1$s</string>
+    <string name="voce_marcador">(you)</string>
+    <string name="comunidade_faz">What the community does</string>
+    <string name="faz_1">Follows creators and gets notified of new prompts</string>
+    <string name="faz_2">Marks reviews as helpful</string>
+    <string name="faz_3">Builds curated lists by theme</string>
+    <string name="faz_4">Joins monthly creation challenges</string>
+    <string name="compra_verificada">Verified purchase</string>
+    <string name="util">Helpful (%d)</string>
 
-    <!-- Perfil -->
-    <string name="perfil">Profile</string>
-    <string name="minhas_assinaturas">My subscriptions</string>
-    <string name="nenhuma_assinatura">No subscriptions yet</string>
-    <string name="escolha_criador">Pick a creator on Home.</string>
-    <string name="pago_via">Paid via %1$s</string>
-    <string name="painel_financeiro">Financial dashboard</string>
-    <string name="receita_plataforma">Platform revenue (30%)</string>
-    <string name="criadores_recebem">Creators receive the other 70%.</string>
-    <string name="saldo_criador">Creator balance (70%)</string>
+    <!-- Mais -->
+    <string name="mais_titulo">More</string>
+    <string name="saldo_demo">Demo balance</string>
+    <string name="saldo_demo_nota">In the real product, payment would be by Pix or card.</string>
+    <string name="modulos">Modules</string>
+    <string name="planos_resumo">Plans for buyers and direct support for creators</string>
+    <string name="comissoes_resumo">Order a custom prompt, with escrow payment</string>
+    <string name="historico_resumo">Purchases, subscriptions and donations in one statement</string>
+    <string name="negocio_resumo">Fees, recurring plans, simulator and roadmap</string>
     <string name="idioma">Language</string>
     <string name="idioma_ingles">English</string>
     <string name="idioma_ingles_sub">Primary language</string>
     <string name="idioma_portugues">Português</string>
     <string name="idioma_portugues_sub">Portuguese (Brazil)</string>
     <string name="ativo">Active</string>
+    <string name="demonstracao">Demo</string>
+    <string name="reiniciar">Restart demo</string>
+    <string name="reiniciar_sub">Back to the starting data</string>
+    <string name="reiniciar_pergunta">Purchases, reviews and orders made in this session will be erased.</string>
+    <string name="reiniciado">Demo restarted.</string>
     <string name="sair">Log out</string>
+
+    <!-- Assinaturas e doações -->
+    <string name="planos_titulo">Subscriptions and donations</string>
+    <string name="planos_sub">Buyer plans bring recurring revenue. Donations and creator subscriptions support the people who publish.</string>
+    <string name="mensal">Monthly</string>
+    <string name="anual">Yearly</string>
+    <string name="anual_desconto">20% off on the yearly plan.</string>
+    <string name="mais_escolhido">Most popular</string>
+    <string name="por_mes">per month</string>
+    <string name="plano_nota_gratis">To start exploring.</string>
+    <string name="plano_nota_mensal">Billed monthly, cancel anytime.</string>
+    <string name="plano_nota_anual">Billed %1$s per year.</string>
+    <string name="plano_atual">Current plan</string>
+    <string name="usar_gratuito">Use the free plan</string>
+    <string name="assinar_plano">Subscribe to %1$s</string>
+    <string name="plano_ativado">%1$s plan activated.</string>
+    <string name="apoie_titulo">Support creators</string>
+    <string name="apoie_sub">Send a one-off donation or subscribe to a creator to get exclusive content every month.</string>
+    <string name="campo_criador">Creator</string>
+    <string name="valor_doacao">Donation amount</string>
+    <string name="outro_valor">Other amount</string>
+    <string name="doar">Donate</string>
+    <string name="assinar_criador">Subscribe to creator for %1$s/month</string>
+    <string name="obrigado_doacao">Thank you! %1$s sent to %2$s.</string>
+    <string name="assinou_criador">You subscribed to %1$s for %2$s per month.</string>
+
+    <!-- Comissões -->
+    <string name="comissoes_titulo">Custom commissions</string>
+    <string name="comissoes_sub">When no prompt in the catalog fits, the buyer orders a custom one. The money stays in escrow until the delivery is approved.</string>
+    <string name="passo_1">Choose the creator</string>
+    <string name="passo_1_sub">See the profile, portfolio and reviews.</string>
+    <string name="passo_2">Describe the brief</string>
+    <string name="passo_2_sub">Explain the goal, the AI tool and the expected result.</string>
+    <string name="passo_3">Pay into escrow</string>
+    <string name="passo_3_sub">The money is held and only goes to the creator after approval.</string>
+    <string name="passo_4">Receive and review</string>
+    <string name="passo_4_sub">Approve the delivery, release the payment and leave your review.</string>
+    <string name="nova_encomenda">New order</string>
+    <string name="briefing">Brief</string>
+    <string name="briefing_hint">E.g.: I need a prompt that turns meeting notes into minutes with decisions and owners.</string>
+    <string name="orcamento_valor">Budget: %1$s</string>
+    <string name="prazo">Deadline</string>
+    <string name="prazo_dias">%d days</string>
+    <string name="enviar_encomenda">Send order</string>
+    <string name="encomenda_enviada">Order sent. The money is now in escrow.</string>
+    <string name="minhas_encomendas">My orders</string>
+    <string name="sem_encomendas">No orders yet. Send the first one using the form above.</string>
+    <string name="encomenda_info">%1$s in escrow, %2$s deadline</string>
+    <string name="avancar_etapa">Next step (demo)</string>
+    <string name="aprovar_liberar">Approve and release</string>
+    <string name="pagamento_liberado">Payment released to the creator</string>
+    <string name="etapa_atual">Current step: %1$s</string>
+    <string name="criador_entregou">The creator delivered. Approve it to release the payment.</string>
+    <string name="entrega_aprovada">Delivery approved. The payment was released to the creator.</string>
+
+    <!-- Histórico -->
+    <string name="historico_titulo">Purchase history</string>
+    <string name="historico_sub">Purchases, subscriptions, donations and commissions in a single statement you can export.</string>
+    <string name="total_movimentado">Total spent</string>
+    <string name="transacoes">Transactions</string>
+    <string name="plano_atual_rotulo">Current plan</string>
+    <string name="exportar_csv">Export statement as CSV</string>
+    <string name="arquivo_csv">promptplace-history.csv</string>
+    <string name="extrato_exportado">Statement exported.</string>
+    <string name="erro_exportar">The file could not be saved.</string>
+
+    <!-- Modelo de negócio -->
+    <string name="negocio_titulo">Business model</string>
+    <string name="negocio_sub">The platform earns when the creator earns. The numbers below are illustrative, not projections.</string>
+    <string name="receita_1">Prompt sales</string>
+    <string name="receita_1_sub">Fee on every purchase in the marketplace.</string>
+    <string name="receita_2">Custom commissions</string>
+    <string name="receita_2_sub">Charged only when the delivery is approved.</string>
+    <string name="receita_3">Pro and Teams plans</string>
+    <string name="receita_3_sub">Recurring revenue. Pro costs R$ 29 per month and Teams, R$ 99.</string>
+    <string name="receita_4">Donations and creator subscriptions</string>
+    <string name="receita_4_sub">Lower fee to encourage direct support.</string>
+    <string name="simulador_titulo">Revenue simulator</string>
+    <string name="vendas_mes">Sales per month</string>
+    <string name="ticket_medio">Average ticket</string>
+    <string name="volume">Total volume</string>
+    <string name="repasse">Paid to creators (85%)</string>
+    <string name="receita">Platform revenue (15%)</string>
+    <string name="simulador_nota">Considers only the fee on prompt sales.</string>
+    <string name="roadmap">Roadmap</string>
+    <string name="fase_1">Phase 1: foundation</string>
+    <string name="fase_1_itens">Marketplace with search and preview\nCreator profile and publishing\nPayments and verified reviews</string>
+    <string name="fase_2">Phase 2: recurring revenue</string>
+    <string name="fase_2_itens">Commissions with escrow payment\nPro and Teams plans\nDonations and creator subscriptions</string>
+    <string name="fase_3">Phase 3: scale</string>
+    <string name="fase_3_itens">Community, lists and rankings\nCollections curated by the team\nAPI to use prompts inside apps</string>
 </resources>

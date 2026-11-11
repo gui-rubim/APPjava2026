@@ -1,29 +1,20 @@
 package com.promptplace.model;
 
-/** As 3 verticais da proposta. */
+/** Categorias do marketplace. */
 public enum Categoria {
-    IMAGEM(new Texto("Image", "Imagem"), "Midjourney, DALL-E, Stable Diffusion"),
-    TEXTO(new Texto("Text", "Texto"), "ChatGPT, Gemini, Claude"),
-    CODIGO(new Texto("Code", "Código"), "Claude Code, Copilot, Cursor");
+    MARKETING(new Texto("Marketing", "Marketing")),
+    PROGRAMACAO(new Texto("Programming", "Programação")),
+    ESTUDOS(new Texto("Studies", "Estudos")),
+    DESIGN(new Texto("Design", "Design")),
+    NEGOCIOS(new Texto("Business", "Negócios"));
 
     private final Texto nome;
-    private final String ferramentas;
 
-    Categoria(Texto nome, String ferramentas) {
+    Categoria(Texto nome) {
         this.nome = nome;
-        this.ferramentas = ferramentas;
     }
 
     public String getNome() {
         return nome.get();
-    }
-
-    /** "Image AI" / "IA de Imagem" */
-    public String getNomeCompleto() {
-        return Idioma.t(getNome() + " AI", "IA de " + getNome());
-    }
-
-    public String getFerramentas() {
-        return ferramentas;
     }
 }

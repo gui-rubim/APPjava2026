@@ -9,8 +9,7 @@ public class PagamentoPix extends Pagamento {
 
     @Override
     public String processar() {
-        return Formato.texto(Idioma.t("Pix QR code generated. R$ %.2f approved instantly!",
-                "QR Code Pix gerado. R$ %.2f aprovado na hora!"), valor);
+        return Idioma.t("Pix approved instantly: ", "Pix aprovado na hora: ") + Formato.dinheiro(valor) + ".";
     }
 
     @Override

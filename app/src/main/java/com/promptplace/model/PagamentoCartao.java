@@ -3,7 +3,7 @@ package com.promptplace.model;
 /** POLIMORFISMO: Cartão processa o pagamento do seu jeito. */
 public class PagamentoCartao extends Pagamento {
 
-    private String finalCartao;
+    private final String finalCartao;
 
     public PagamentoCartao(double valor, String finalCartao) {
         super(valor);
@@ -12,13 +12,12 @@ public class PagamentoCartao extends Pagamento {
 
     @Override
     public String processar() {
-        return Formato.texto(Idioma.t("Monthly charge of R$ %.2f approved on card ending in %s.",
-                "Cobrança mensal de R$ %.2f no cartão final %s aprovada."),
-                valor, finalCartao);
+        return Idioma.t("Card ending in " + finalCartao + " charged: ",
+                "Cartão final " + finalCartao + " cobrado: ") + Formato.dinheiro(valor) + ".";
     }
 
     @Override
     public String getNome() {
-        return Idioma.t("Card", "Cartão");
+        return Idioma.t("Credit card", "Cartão de crédito");
     }
 }

@@ -18,11 +18,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".telas.FeedActivity" />
-        <activity android:name=".telas.CriadorActivity" />
-        <activity android:name=".telas.PagamentoActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".telas.MarketplaceActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".telas.PromptActivity" />
         <activity android:name=".telas.BibliotecaActivity" />
-        <activity android:name=".telas.PromptActivity" android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".telas.PerfilActivity" />
+        <activity android:name=".telas.CriadorActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".telas.ComunidadeActivity" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".telas.MaisActivity" />
+        <activity android:name=".telas.PlanosActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".telas.ComissoesActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".telas.HistoricoActivity" />
+        <activity android:name=".telas.NegocioActivity" />
     </application>
 </manifest>
